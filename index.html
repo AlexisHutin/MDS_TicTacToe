@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>LE MORPION</title>
+</head>
+
+	<style>
+		.grid{
+			width: 300px;
+			height: 300px;
+			border: 5px solid black;
+			border-collapse: collapse;
+		}
+
+		td{
+			border: 1px solid black;
+			text-align: center;
+			width: 33%;
+			height: 33%;
+		}
+
+		td:nth-child(n+1){
+			border-left: 3px solid black;
+		}
+
+		tr:nth-child(n){
+			border-bottom: 3px solid black;
+		}
+
+		td:hover{
+			background-color: rgba(3, 3, 3, 0.25);
+		}
+	</style>
+
+<body>
+
+	<table class="grid">
+		<tr>
+			<td onclick="play(this);" class="case">1</td>
+			<td onclick="play(this);" class="case">2</td>
+			<td onclick="play(this);" class="case">3</td>
+		</tr>
+
+		<tr>
+			<td onclick="play(this);" class="case">4</td>
+			<td onclick="play(this);" class="case">5</td>
+			<td onclick="play(this);" class="case">6</td>
+		</tr>
+
+		<tr>
+			<td onclick="play(this);" class="case">7</td>
+			<td onclick="play(this);" class="case">8</td>
+			<td onclick="play(this);" class="case">9</td>
+		</tr>
+	</table>
+
+	<script type="text/javascript" src="tictactoe.js"></script>
+</body>
+</html>
